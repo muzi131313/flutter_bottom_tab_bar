@@ -404,6 +404,7 @@ class _BottomNavigationTile extends StatelessWidget {
       );
     }
     return GestureDetector(
+        behavior: HitTestBehavior.translucent,
         onTap: onTap,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
