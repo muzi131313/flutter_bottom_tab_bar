@@ -391,6 +391,7 @@ class _BottomNavigationTile extends StatelessWidget {
   Widget _buildInkWidget(Widget label) {
     if (isInkResponse) {
       return InkResponse(
+        behavior: HitTestBehavior.translucent,
         onTap: onTap,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
