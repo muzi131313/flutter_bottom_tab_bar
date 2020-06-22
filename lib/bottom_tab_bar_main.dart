@@ -444,8 +444,8 @@ class _BottomNavigationTile extends StatelessWidget {
         selected: selected,
         child: Stack(
           children: <Widget>[
-            Positioned(right: 4, top: 4, child: _buildBadge()),
             _buildInkWidget(label),
+            Positioned(right: 4, top: 4, child: _buildBadge()),
             Semantics(
               label: indexLabel,
             )
